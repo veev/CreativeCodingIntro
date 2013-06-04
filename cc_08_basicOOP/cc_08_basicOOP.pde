@@ -1,3 +1,22 @@
-object oriented ball example
 
-so that the button color can change, and not depend on fill
+//Declare Ball object called myBall;
+Ball myBall;
+
+void setup() {
+ size(800, 800); 
+ //Instantiate myBall object
+ myBall = new Ball();
+}
+
+void draw() {
+  background(255);
+  myBall.update(mouseX, mouseY);
+  myBall.draw();
+}
+
+void mousePressed() {
+  
+  if (myBall.insideCircle(mouseX, mouseY)){
+     myBall.toggleButton(); 
+  } 
+}
