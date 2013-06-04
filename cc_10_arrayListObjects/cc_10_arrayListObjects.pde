@@ -22,8 +22,7 @@ void draw() {
     b.update();
     b.checkEdges();
     b.draw(); 
- }
-  
+ } 
 }
 
 void mousePressed() {
